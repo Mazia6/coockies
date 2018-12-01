@@ -1,0 +1,148 @@
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar {
+    width: 100%;
+    background-color: rgb(73, 71, 71);
+    position: fixed;
+    display: block;
+    z-index: 100;
+}
+
+.brand-stylize {
+    color: rgb(170, 81, 81);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.nav-custom-link {
+    color: antiquewhite;
+    padding-right: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-custom-link:hover {
+    color: rgb(179, 116, 116);
+    padding-right: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.active {
+    color: rgb(170, 81, 81);
+    padding-right: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.active:hover {
+    color: rgb(170, 81, 81);
+    padding-right: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.title-section {
+    background-image: url('../img/xmas-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    height: 100%;
+}
+
+.title-box {
+    background-color: rgba(240, 248, 255, 0.452);
+}
+
+.title-home {
+    padding-top: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color: #3f0e0e;
+    font-size: 3rem;
+}
+
+.title-subtitle {
+    padding-top: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: #3f0e0e;
+    font-size: 2rem;
+}
+
+.title-subtitle:last-child {
+    padding-bottom: 2rem;
+}
+
+.title-ul {
+    list-style-type: none;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.title-li {
+    padding-top: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: #3f0e0e;
+    font-size: 2rem;
+}
+
+.content-abput {
+    width: 100%;
+    background-color: azure;
+}
+
+.img-sect {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.division-img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.recipe-sect {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.recipes-subtitle {
+    padding-top: 3rem;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: #3f0e0e;
+}
+
+.recipe-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: #3f0e0e;
+}
+
+#footer {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-sect {
+    background-color: rgb(41, 41, 41);
+}
