@@ -146,3 +146,42 @@ body {
 .footer-sect {
     background-color: rgb(41, 41, 41);
 }
+
+.custon-icon {
+    color: rgb(153, 153, 153);
+    font-size: 2rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        height: 90%;
+        width: auto;
+        overflow-x: unset;
+        overflow-y: auto;
+    }
+
+    #navbar {
+        width: 90%;
+        background-color: rgb(73, 71, 71);
+        position: fixed;
+        display: block;
+        z-index: 100;
+    }
+
+    .brand-stylize {
+        color: rgb(170, 81, 81);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .title-section {
+        background-image: url('../img/mobile-bg.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+}
