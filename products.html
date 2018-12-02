@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <title>Cassia Coockies</title>
+</head>
+
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark row">
+            <div class="col-9">
+                <a class="brand-stylize" href="./index.html">Cassia Cookies</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-3" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-custom-link" href="./index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-custom-link active" href="./products.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-custom-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section id="index-content">
+        <div class="title-section">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 col-sm-12 title">
+                    <div class="title-box">
+                        <h1 class="title-home">
+                            Aproveite nossos especiais de natal!
+                        </h1>
+                        <p class="xmas-countdown" id="demo">
+                            <script>
+                                // Set the date we're counting down to
+                                var countDownDate = new Date("Dec 25, 2018 00:00:00").getTime();
+
+                                // Update the count down every 1 second
+                                var x = setInterval(function () {
+
+                                    // Get todays date and time
+                                    var now = new Date().getTime();
+
+                                    // Find the distance between now and the count down date
+                                    var distance = countDownDate - now;
+
+                                    // Time calculations for days, hours, minutes and seconds
+                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                    // Output the result in an element with id="demo"
+                                    document.getElementById("demo").innerHTML = "Falta " + days + " dias " + hours + " horas "
+                                        + minutes + " minutos e " + seconds + " segundos para o Natal! ";
+
+                                    // If the count down is over, write some text 
+                                    if (distance < 0) {
+                                        clearInterval(x);
+                                        document.getElementById("demo").innerHTML = "EXPIRED";
+                                    }
+                                }, 1000);
+                            </script>
+                        </p>
+                        <P class="xmas-countdown">
+                            Aproveitando essa oportunidade, nós temos promoções especiais para Panetones e Chocotones
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 content-abput">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 img-sect">
+                            <img src="./img/products/chocotone.jpg" class="division-img">
+                        </div>
+                        <div class="col-md-6 col-sm-12 recipe-sect">
+                            <h2 class="recipes-subtitle">
+                                <i class="fas fa-cookie-bite"></i>
+                                Chocotone
+                            </h2>
+                            <p class="recipe-text">
+                                Chocotones caseiros, com gotas de chocolates 70% cacau e Nibs de Cacau, 
+                                ingredientes preparados com carinho e com o belo sabor do chocolate, uma massa  
+                                fofinha e com cheirinho de frescor durante todo o tempo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 img-sect">
+                            <img src="./img/products/panetone.jpg" class="division-img">
+                        </div>
+                        <div class="col-md-6 col-sm-12 recipe-sect">
+                            <h2 class="recipes-subtitle">
+                                <i class="fas fa-cookie-bite"></i>
+                                Panetone (Sem preteína do leite)
+                            </h2>
+                            <p class="recipe-text">
+                                Panetones com frutas cristalizadas, feitos com carinho, sem a proteína do leite
+                                com uma massa fofinha e com muito sabor do natal!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 img-sect">
+                            <img src="./img/products/cookie.jpg" class="division-img">
+                        </div>
+                        <div class="col-md-6 col-sm-12 recipe-sect">
+                            <h2 class="recipes-subtitle">
+                                <i class="fas fa-cookie-bite"></i>
+                                Cookies de chocolate (Sem glutém)
+                            </h2>
+                            <p class="recipe-text">
+                                Cookie caseiro, assado no forno e com gotas de chocolates bem saborosas 
+                                crocantes e fresquinhos todo tempo. Cai muito bem com delicioso café bem fresquinho!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 img-sect">
+                            <img src="./img/products/limao.jpg" class="division-img">
+                        </div>
+                        <div class="col-md-6 col-sm-12 recipe-sect">
+                            <h2 class="recipes-subtitle">
+                                <i class="fas fa-cookie-bite"></i>
+                                Cookie de limão (100% vegano)
+                            </h2>
+                            <p class="recipe-text">
+                                Cookies de limão, são o nosso carro chefe e é 100% vegano, ou seja, não tem glutém 
+                                nem mesmo com proteína do leite. Assado no forno e preparado com leite de coco caseíro;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 img-sect">
+                            <img src="./img/products/baunilha.jpg" class="division-img">
+                        </div>
+                        <div class="col-md-6 col-sm-12 recipe-sect">
+                            <h2 class="recipes-subtitle">
+                                <i class="fas fa-cookie-bite"></i>
+                                Cookie de baunilha (100% vegano)
+                            </h2>
+                            <p class="recipe-text">
+                                Os cookies de baunilha, os mais tradicionais, produtos caseiros e sem glutém, 
+                                além de não conter a proteína do leite, ou seja, é mais um de nossos belos produtos 100% 
+                                vegano. Cheio de carinho, amor e um cheirinho inigualável!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer-sect">
+            <div class="row">
+                <div class="col-md-6 col-sm-4">
+                    <a class="brand-stylize" href="./index.html">Cassia Cookies</a>
+                    <p style="color: white">&copy; 2018 TheoTech Solutions<p>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f custon-icon"></i></a>
+                        <a href="#"><i class="fab fa-instagram custon-icon"></i></a>
+                        <a target="blank" href="https://wa.me/5511973836447"><i class="fab fa-whatsapp custon-icon"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <a class="nav-custom-link" href="./index.html">Início</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="nav-custom-link active" href="./products.html">Produtos</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="nav-custom-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
