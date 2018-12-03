@@ -13,6 +13,10 @@ body {
     z-index: 100;
 }
 
+#index-content {
+    padding-top: 5%;
+}
+
 .brand-stylize {
     color: rgb(170, 81, 81);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -120,10 +124,22 @@ body {
     border: 1px solid black;
 }
 
+.contact-division-img {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid black
+}
+
 .recipe-sect {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
+}
+
+.contact-recipe-sect {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: justify;
 }
 
 .recipes-subtitle {
@@ -157,6 +173,14 @@ body {
     padding-right: 2rem;
 }
 
+.contact-custon-icon {
+    color: rgb(47, 47, 47);
+    font-size: 2rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .folder-stylized {
     height: 100%;
     padding: 2rem;
@@ -180,6 +204,24 @@ body {
     font-size: 1.5rem;
     color: #3f0e0e;;
     font-weight: 600
+}
+
+.show-more {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+#hide {
+    display: none;
+}
+
+.contact-sect {
+    text-align: center;
+}
+
+.contact-content-abput {
+    width: 100%;
+    background-color: rgb(200, 149, 187);
 }
 
 @media only screen and (max-width: 600px) {

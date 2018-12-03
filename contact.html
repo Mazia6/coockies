@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function showMore() {
+            $("#hide").show();
+            $("#showLess").show();
+            $("#showMore").hide();
+        }
+
+        function showLess() {
+            $("#hide").hide();
+            $("#showLess").hide();
+            $("#showMore").show();
+        }
+    </script>
+
+    <title>Cassia Coockies</title>
+</head>
+
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark row">
+            <div class="col-9">
+                <a class="brand-stylize" href="./index.html">Cassia Cookies</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-3" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-custom-link" href="./index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-custom-link" href="./products.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-custom-link active" href="./contact.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section id="index-content">
+        <div class="row">
+            <div class="col-12 content-abput">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 img-sect">
+                            <img src="./img/cassia_co.jpg" class="contact-division-img">
+                        </div>
+                        <div class="col-md-6 col-sm-12 contact-recipe-sect">
+                            <h2 class="recipes-subtitle">
+                                <i class="far fa-grin-wink"></i>
+                                Cássia Regina Corallo
+                            </h2>
+                            <p class="recipe-text">
+                                Meu nome é Cássia Regina Corallo, nasci com alergia a proteína do leite (APLV), mas
+                                infelizmente o diagnóstico veio tardiamente.
+                                Sou nutricionais ,tenho 3 filhas, 2 delas com intolência a proteína do leite, 2 netos
+                                um deles diagnosticado também com APLV.
+                                Passei toda a minha vida com severas reações alérgicas. Até que tardiamente o
+                                diagnostico veio. Sou APLV, porem acabei me tornando também intolerante ao glúten, por
+                                não ter realizado o devido tratamento.
+                                <br />
+                                <br />
+                                <button id="showMore" class="btn btn-info" onclick="showMore()">Ler Mais +</button>
+                            </p>
+                            <p id="hide" class="recipe-text">
+                                Hoje a minha alimentação é 0% proteína do leite e baixo consumo ao glúten.
+                                Com tudo passei a desenvolver receitas para facilitar o consumo alimentar. Leites
+                                vegetais, “queijos” sem a proteína do leite, bolos, biscoitos, cookies, pães, tortas
+                                entre tantas outras receitas. Algumas muito fáceis e rápidas outras um pouco mais
+                                elaboradas. Mas todas possíveis de serem preparadas, por pessoas que tenham habilidades
+                                culinárias ou não. As receitas são preparadas com farinhas sem glúten, (farinha de grão
+                                de bico, de amêndoas, linhaça, arroz), e leites preparados em casa (amêndoas, amendoim,
+                                castanha de caju, coco).
+                                Como não consumo proteína da carne vermelha, estou caminhando para tornar-me vegana.
+                                Ainda tenho um longo caminho para tornar-me vegana mas está sendo um processo natural e
+                                tranquilo.
+                                Irei contando passo a passo o meu consumo diário alimentar.
+                                Vocês poderão ver que a alimentação sem proteína do leite, baixo consumo de glúten e
+                                sem a proteína da carne vermelha é possível, sem passar vontade, com sabor, alegria e o
+                                mais importante tudo muito saboroso.
+                                <br />
+                                <br />
+                                <button id="showLess" class="btn btn-info" onclick="showLess()">Ler Menos -</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-content">
+        <div class="row">
+            <div class="col-12 contact-content-abput">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 contact-sect">
+                            <h2 class="recipes-subtitle">
+                                Ficou Interessado?
+                                <br />
+                                Quer mais Informações?
+                                <br />
+                                Então entre em contato!!
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 contact-sect">
+                            <a target="blank" href="https://www.facebook.com/C%C3%A1ssia-Cookies-504738896713820/"><i
+                                    class="fab fa-facebook-f contact-custon-icon"></i></a>
+                            <p>Pelo nosso Facebook</p>
+                            <a target="blank" href="https://www.instagram.com/cassiacookies/"><i class="fab fa-instagram contact-custon-icon"></i></a>
+                            <p>Pelo nosso Instagram</p>
+                            <a target="blank" href="https://wa.me/5511973836447"><i class="fab fa-whatsapp contact-custon-icon"></i></a>
+                            <p>Pelo nosso Whatsapp</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 contact-sect">
+                            <a target="blank" href="mailto:contato.cassia.cookies@gmail.com"><i class="far fa-envelope contact-custon-icon"></i></a>
+                            <p>Pelo Email
+                                contato.caccia.cookies@gmail.com
+                            </p>
+                            <a target="blank" href="tel:5511973836447"><i class="fas fa-phone contact-custon-icon"></i></a>
+                            <p>Pelo telefone (11) 97383-6447</p>
+                            <a target="blank" href="https://perfil.mercadolivre.com.br/CASSIA_CORALLO"><i class="fas fa-shopping-cart contact-custon-icon"></i></a>
+                            <p>Pelo Mercado Livre</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 contact-sect">
+                            <h2 class="recipes-subtitle">
+                                Nós trabalhamos de segunda a sexta
+                                <br />
+                                Das 08:00 até as 18:00
+                            </h2>
+                            <p class="recipe-text">
+                                Todos os produtos são tratados via primeiro contato
+                                <br />
+                                aceitamos pagamentos via PayPal e MercadoPago.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 contact-sect">
+                            <h2 class="recipes-subtitle">
+                                OBRIGADO PELA SUA VISITA
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer-sect">
+            <div class="row">
+                <div class="col-md-6 col-sm-4">
+                    <a class="brand-stylize" href="./index.html">Cassia Cookies</a>
+                    <p style="color: white">&copy; 2018 TheoTech Solutions<p>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="social-icons">
+                        <a target="blank" href="https://www.facebook.com/C%C3%A1ssia-Cookies-504738896713820/"><i class="fab fa-facebook-f custon-icon"></i></a>
+                        <a target="blank" href="https://www.instagram.com/cassiacookies/"><i class="fab fa-instagram custon-icon"></i></a>
+                        <a target="blank" href="https://wa.me/5511973836447"><i class="fab fa-whatsapp custon-icon"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <a class="nav-custom-link" href="./index.html">Início</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="nav-custom-link" href="./products.html">Produtos</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="nav-custom-link active" href="./contact.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
